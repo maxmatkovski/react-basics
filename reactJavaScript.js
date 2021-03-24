@@ -12,3 +12,21 @@ sayHello();
 // var -> function
 // let -> block
 // const -> block (but constant)
+
+
+// Objects
+const person = {
+    name: 'Max',
+    walk (){},
+    talk (){}
+};
+
+// function within object is called a 'method'
+
+person.talk();
+person.name = '';
+
+const targetMember = 'name';
+person[targetMember.value] = 'John';
+
+
