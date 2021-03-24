@@ -62,3 +62,21 @@ const square = number => {
 
 // even more compact
 const square = number => number * number;
+
+
+// Array Filter
+const jobs = [
+    {id: 1, isActive: true},
+    {id: 2, isActive: true},
+    {id: 3, isActive: false},
+];
+
+/* Less Clean
+const activeJobs = jobs.filter(function(job) {return job.isActive;})
+*/
+
+const activeJobs = jobs.filter(job => job.isActive)
+
+// If isActive = true, job will be returned from filter method
+
+
