@@ -30,3 +30,15 @@ const targetMember = 'name';
 person[targetMember.value] = 'John';
 
 
+// functions as objects
+const person = {
+    name: 'Max',
+    walk (){
+        console.log(this);
+    }
+};
+
+person.walk();
+
+const walk = person.walk.bind(person);
+walk();
