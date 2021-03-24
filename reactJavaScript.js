@@ -42,3 +42,23 @@ person.walk();
 
 const walk = person.walk.bind(person);
 walk();
+
+// Arrow Functions
+
+// old way of writing 
+const square = function(number){
+    return number * number;
+}
+
+// new arrow functions
+const square = (number) => {
+    return number * number;
+}     
+ 
+// if one parameter parentheses not need eg:
+const square = number => {
+    return number * number;
+}    
+
+// even more compact
+const square = number => number * number;
